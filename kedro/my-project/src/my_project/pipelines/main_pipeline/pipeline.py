@@ -8,10 +8,10 @@ from kedro.pipeline.node import node
 
 from .nodes import hi, load_data, load_nlp
 
+
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline(
-    	[
-    		node(load_data, inputs=None, outputs="loaded_data", name="load_data"),
-    		node(load_nlp, inputs=None, outputs="nlp", name="nlp")
-    	]
+        [
+            node(load_data, inputs=None, outputs="loaded_data", name="load_data")
+        ]
     )
