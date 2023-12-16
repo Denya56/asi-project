@@ -3,11 +3,11 @@ def clean_data(data, re_letters):
     data['text'] = data['text'].apply(lambda x: re_letters.sub('', x))
 
 
-def remove_stopwords(text):
+def remove_stopwords(text, nlp):
     return ' '.join(filter(lambda x: x not in nlp.Defaults.stop_words, text.split()))
 
 
-def lemmatize(text):
+def lemmatize(text, nlp):
     return ' '.join([x.lemma_ for x in nlp(text)])
 
 

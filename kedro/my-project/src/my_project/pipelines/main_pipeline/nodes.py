@@ -7,7 +7,7 @@ import spacy
 import re
 import tensorflow as tf
 import keras
-import my_package as jrd
+import jrdpackage as jrd
 from keras.models import Sequential
 from keras import layers
 from tensorflow.keras.optimizers import RMSprop, Adam
@@ -23,14 +23,19 @@ def hi():
     
 def load_data():
     names=['text', 'label']
-    df = pd.read_csv('~/Documents/asi-project/data/train_dataset.csv', names=names)
+    df = pd.read_csv('~/Documents/asi-project/data/train-data/train_dataset.csv', names=names)
     data=df[['text','label']]
     re_letters=re.compile(r"[^a-zA-Z\s']")
     jrd.clean_data(data, re_letters)
     return data
     
 def load_nlp():
-    nlp = spacy.load('en_core_web_md',disable=['ner', 'parser'])
+    try:
+        nlp = spacy.load('en_core_web_md', disable=['ner', 'parser'])
+    except OSError:
+        # Download the model if it's not already available
+        spacy.cli.download("en_core_web_md")
+        nlp = spacy.load('en_core_web_md', disable=['ner', 'parser'])
     nlp.add_pipe('sentencizer')
     nlp.Defaults.stop_words.add("game")
     nlp.Defaults.stop_words.add("play")
@@ -38,15 +43,15 @@ def load_nlp():
     return nlp
     
 def apply_data(data, nlp):
-    data['text']=data['text'].apply(jrd.remove_stopwords)
-    data['text']=data['text'].apply(jrd.lemmatize)
+    data['text']=data['text'].apply(lambda x: jrd.remove_stopwords(x, nlp))
+    data['text']=data['text'].apply(lambda x: jrd.lemmatize(x, nlp))
     return data
     
 def tokenizer():
     max_words = 5000
     
     tokenizer = Tokenizer(num_words=max_words)
-    return tokenizer	
+    return tokenizer
     
 def reviews(tokenizer, data):
     max_len = 500
@@ -80,7 +85,7 @@ def train_model(X_train, X_test, y_train, y_test):
 def evaluate_model():
     names=['text', 'label']
     df_test = pd.read_csv('~/Documents/asi-project/data/test_dataset.csv', names=names)
-    data_test=df_test[['text','label']]
+    data_test=df_test[['text','label']]S
     clean_data(data_test, re_letters)
     data_test['text']=data_test['text'].apply(remove_stopwords)
     data_test['text']=data_test['text'].apply(lemmatize)
@@ -101,9 +106,7 @@ def evaluate_model():
     print(score / len(data_test))
 
 
-def predict_model(data_test):
-    user_input = input("Enter a review (or 'exit' to end): ")
-
+def predict_model(data_test, user_input):
     user_sequence = tokenizer.texts_to_sequences([user_input])
     user_data = pad_sequences(user_sequence, maxlen=max_len)
     # Make predictions for the user input
