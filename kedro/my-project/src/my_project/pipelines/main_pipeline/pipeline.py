@@ -6,14 +6,16 @@ generated using Kedro 0.18.14
 from kedro.pipeline import Pipeline, pipeline
 from kedro.pipeline.node import node
 
-from .nodes import hi, load_data, load_nlp, apply_data
+from my_project.pipelines.shared_nodes import load_nlp, tokenizer, prepare_data
+from .nodes import hi, load_train_data
 
 
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline(
         [
-            node(load_data, inputs=None, outputs="data", name="data"),
+            node(load_train_data, inputs=None, outputs="df", name="df"),
             node(load_nlp, inputs=None, outputs="nlp", name="nlp"),
-            node(apply_data, inputs={"data": "data", "nlp": "nlp"}, outputs="data_applied")
+            node(tokenizer, inputs=None, outputs="tokenizer", name="tokenizer"),
+            node(prepare_data, inputs={"df": "df", "nlp": "nlp", "tokenizer": "tokenizer"}, outputs=["labels", "reviews"], name="data_prepared")
         ]
     )
