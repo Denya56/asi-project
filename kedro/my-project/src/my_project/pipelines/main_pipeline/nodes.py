@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from keras.models import Sequential
 from keras import layers
 from my_project.pipelines.shared_nodes import names, max_len, max_words
+from datetime import datetime
 
 import pickle
 
@@ -31,6 +32,8 @@ def train_model(reviews, labels):
     	             epochs=1,
     	             validation_data=(X_test, y_test))
     # Save the model using Kedro's catalog
-    with open('data/06_models/model.pkl', 'wb') as file:
-    	pickle.dump(model3, file)
+    model_name = f"model_{datetime.now().strftime('%Y%m%d%H%M%S')}.pkl"
+
+    with open(f'data/06_models/{model_name}', 'wb') as file:
+        pickle.dump(model3, file)
     #model3.save('~/ASI_2/asi-project/kedro/my-project/data/06_models/model.h5')
