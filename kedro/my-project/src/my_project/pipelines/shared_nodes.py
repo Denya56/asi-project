@@ -39,4 +39,5 @@ def prepare_data(df, nlp, tokenizer):
     tokenizer.fit_on_texts(data.text)
     sequences = tokenizer.texts_to_sequences(data.text)
     reviews = pad_sequences(sequences, maxlen=max_len)
+    
     return labels, reviews
