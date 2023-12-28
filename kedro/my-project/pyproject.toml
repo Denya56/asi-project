@@ -2,6 +2,7 @@
 package_name = "my_project"
 project_name = "my_project"
 kedro_init_version = "0.18.14"
+project_version = "0.18.14"
 
 [tool.isort]
 profile = "black"
@@ -15,3 +16,4 @@ addopts = """
 fail_under = 0
 show_missing = true
 exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
+

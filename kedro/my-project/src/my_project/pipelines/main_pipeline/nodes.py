@@ -8,7 +8,9 @@ from my_project.pipelines.shared_nodes import names, max_len, max_words
 from datetime import datetime
 
 import pickle
+# nodes.py
 
+    
 def hi():
     return "xdd"
     
@@ -37,3 +39,6 @@ def train_model(reviews, labels):
     with open(f'data/06_models/{model_name}', 'wb') as file:
         pickle.dump(model3, file)
     #model3.save('~/ASI_2/asi-project/kedro/my-project/data/06_models/model.h5')
+    
+
+    
