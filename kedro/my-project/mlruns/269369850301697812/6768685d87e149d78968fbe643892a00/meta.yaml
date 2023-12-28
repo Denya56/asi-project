@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/6768685d87e149d78968fbe643892a00/artifacts
+end_time: 1703769749052
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 6768685d87e149d78968fbe643892a00
+run_name: K Neighbors Classifier
+run_uuid: 6768685d87e149d78968fbe643892a00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703769748977
+status: 3
+tags: []
+user_id: s22264

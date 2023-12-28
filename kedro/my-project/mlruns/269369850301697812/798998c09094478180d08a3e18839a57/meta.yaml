@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/798998c09094478180d08a3e18839a57/artifacts
+end_time: 1703777049090
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 798998c09094478180d08a3e18839a57
+run_name: Gradient Boosting Classifier
+run_uuid: 798998c09094478180d08a3e18839a57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703777049015
+status: 3
+tags: []
+user_id: s22264

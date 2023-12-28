@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/8c15bbf5c7b44df1ac50a9705a6b06e8/artifacts
+end_time: 1703770215307
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 8c15bbf5c7b44df1ac50a9705a6b06e8
+run_name: Dummy Classifier
+run_uuid: 8c15bbf5c7b44df1ac50a9705a6b06e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703770215221
+status: 3
+tags: []
+user_id: s22264

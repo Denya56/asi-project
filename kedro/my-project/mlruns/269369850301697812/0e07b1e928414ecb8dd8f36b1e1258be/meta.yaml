@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/0e07b1e928414ecb8dd8f36b1e1258be/artifacts
+end_time: 1703764400681
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 0e07b1e928414ecb8dd8f36b1e1258be
+run_name: Ada Boost Classifier
+run_uuid: 0e07b1e928414ecb8dd8f36b1e1258be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703764400611
+status: 3
+tags: []
+user_id: s22264

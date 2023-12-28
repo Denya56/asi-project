@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/365435d4af2e426fbc340ad26221bcff/artifacts
+end_time: 1703765237613
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 365435d4af2e426fbc340ad26221bcff
+run_name: SVM - Linear Kernel
+run_uuid: 365435d4af2e426fbc340ad26221bcff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703765237111
+status: 3
+tags: []
+user_id: s22264

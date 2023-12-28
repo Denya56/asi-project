@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/48f265fe3f534d258a1f46377b5bd8d9/artifacts
+end_time: 1703768990957
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 48f265fe3f534d258a1f46377b5bd8d9
+run_name: Extra Trees Classifier
+run_uuid: 48f265fe3f534d258a1f46377b5bd8d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703768990877
+status: 3
+tags: []
+user_id: s22264

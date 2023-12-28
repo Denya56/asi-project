@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/6057fc96e97a42e9b80fee2ac9e88f18/artifacts
+end_time: 1703770826563
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 6057fc96e97a42e9b80fee2ac9e88f18
+run_name: Ridge Classifier
+run_uuid: 6057fc96e97a42e9b80fee2ac9e88f18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703770826477
+status: 3
+tags: []
+user_id: s22264

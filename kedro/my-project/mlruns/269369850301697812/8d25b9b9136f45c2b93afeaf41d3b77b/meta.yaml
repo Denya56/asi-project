@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/8d25b9b9136f45c2b93afeaf41d3b77b/artifacts
+end_time: 1703765237862
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 8d25b9b9136f45c2b93afeaf41d3b77b
+run_name: Decision Tree Classifier
+run_uuid: 8d25b9b9136f45c2b93afeaf41d3b77b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703765237795
+status: 3
+tags: []
+user_id: s22264

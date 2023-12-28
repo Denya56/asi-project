@@ -1,0 +1,6 @@
+artifact_location: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812
+creation_time: 1703760246049
+experiment_id: '269369850301697812'
+last_update_time: 1703760246049
+lifecycle_stage: active
+name: text_classification_experiment

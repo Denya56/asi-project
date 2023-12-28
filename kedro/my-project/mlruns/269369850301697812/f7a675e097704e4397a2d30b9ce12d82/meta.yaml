@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/f7a675e097704e4397a2d30b9ce12d82/artifacts
+end_time: 1703766581476
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: f7a675e097704e4397a2d30b9ce12d82
+run_name: Logistic Regression
+run_uuid: f7a675e097704e4397a2d30b9ce12d82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703766581399
+status: 3
+tags: []
+user_id: s22264

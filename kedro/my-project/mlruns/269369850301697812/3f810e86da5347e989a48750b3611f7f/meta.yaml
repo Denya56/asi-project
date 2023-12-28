@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/3f810e86da5347e989a48750b3611f7f/artifacts
+end_time: 1703777980265
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 3f810e86da5347e989a48750b3611f7f
+run_name: Linear Discriminant Analysis
+run_uuid: 3f810e86da5347e989a48750b3611f7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703777980180
+status: 3
+tags: []
+user_id: s22264

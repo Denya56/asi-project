@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/dd58aabaf4f14a3ca2c9835153e55fdb/artifacts
+end_time: 1703768518647
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: dd58aabaf4f14a3ca2c9835153e55fdb
+run_name: Naive Bayes
+run_uuid: dd58aabaf4f14a3ca2c9835153e55fdb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703768518576
+status: 3
+tags: []
+user_id: s22264

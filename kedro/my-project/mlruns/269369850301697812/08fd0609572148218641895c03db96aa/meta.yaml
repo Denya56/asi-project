@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/08fd0609572148218641895c03db96aa/artifacts
+end_time: 1703777636976
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 08fd0609572148218641895c03db96aa
+run_name: Session Initialized ac11
+run_uuid: 08fd0609572148218641895c03db96aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703777585010
+status: 3
+tags: []
+user_id: s22264

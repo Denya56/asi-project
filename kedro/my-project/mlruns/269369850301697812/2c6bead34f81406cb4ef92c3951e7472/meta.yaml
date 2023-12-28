@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/2c6bead34f81406cb4ef92c3951e7472/artifacts
+end_time: 1703768760550
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 2c6bead34f81406cb4ef92c3951e7472
+run_name: Light Gradient Boosting Machine
+run_uuid: 2c6bead34f81406cb4ef92c3951e7472
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703768760446
+status: 3
+tags: []
+user_id: s22264

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/49d0b6a8848b472bb76d8b828b3b70b1/artifacts
+end_time: 1703765375251
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 49d0b6a8848b472bb76d8b828b3b70b1
+run_name: Random Forest Classifier
+run_uuid: 49d0b6a8848b472bb76d8b828b3b70b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703765375172
+status: 3
+tags: []
+user_id: s22264

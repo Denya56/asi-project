@@ -1,0 +1,15 @@
+artifact_uri: file:///home/s22264/Documents/ASIrepo/asi-project/kedro/my-project/mlruns/269369850301697812/5e0450b60ec44901855ea0220559b691/artifacts
+end_time: 1703766582959
+entry_point_name: ''
+experiment_id: '269369850301697812'
+lifecycle_stage: active
+run_id: 5e0450b60ec44901855ea0220559b691
+run_name: Quadratic Discriminant Analysis
+run_uuid: 5e0450b60ec44901855ea0220559b691
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703766582882
+status: 3
+tags: []
+user_id: s22264
