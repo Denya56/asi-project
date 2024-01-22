@@ -3,7 +3,8 @@ from __future__ import annotations
 
 from kedro.framework.project import find_pipelines
 from kedro.pipeline import Pipeline
-
+from my_project.pipelines.main_pipeline.pipeline import create_pipeline
+from my_project.pipelines.pycaret_pipeline import create_pycaret_pipeline
 
 def register_pipelines() -> dict[str, Pipeline]:
     """Register the project's pipelines.
@@ -11,6 +12,19 @@ def register_pipelines() -> dict[str, Pipeline]:
     Returns:
         A mapping from pipeline names to ``Pipeline`` objects.
     """
-    pipelines = find_pipelines()
-    pipelines["__default__"] = sum(pipelines.values())
+    # Create the main and PyCaret pipelines
+    main_pipeline = create_pipeline()
+    pycaret_pipeline = create_pycaret_pipeline()
+
+    # Combine the pipelines
+    pipelines = {
+        "main": main_pipeline,
+        "pycaret": pycaret_pipeline,
+    }
+
+    # Add any other pipelines you might have in the future
+    # Example:
+    # additional_pipeline = create_additional_pipeline()
+    # pipelines["additional"] = additional_pipeline
+
     return pipelines
