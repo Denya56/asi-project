@@ -3,9 +3,10 @@ FROM python:3.10.7-bullseye
 COPY requirements.txt /build/
 RUN pip install --no-cache-dir -r /build/requirements.txt
 
-COPY kedro /app/kedro/
-
 COPY package /app/package/
+RUN pip install --no-cache-dir /app/package
+
+COPY kedro /app/kedro/
 
 WORKDIR /app/kedro/my-project/
 
